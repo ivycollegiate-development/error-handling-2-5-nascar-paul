@@ -1,2 +1,4 @@
-number_value = input('Please enter a number: ')
-print(f'The number that you input: {number_value}')
+try:
+    number_value = int(input('Please enter a number: '))
+except ValueError:
+    print('Sorry, but that is not a vaild number.')
